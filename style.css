@@ -100,6 +100,12 @@ section {
     border-radius: 30px;
 }
 
+.tab-button,
+#demo,
+.tab-More-button {
+    cursor: pointer;
+}
+
 .switcher-bar {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 73px;
@@ -114,22 +120,25 @@ section {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.9s ease-in-out;
-   
+
 }
+
 .content {
     display: flex;
 
 }
-.tab-content{
+
+.tab-content {
     position: relative;
-  
+
 }
- .tab-content .tab.active {
-    height:fit-content;
-    margin-top: 140px; 
+
+.tab-content .tab.active {
+    height: fit-content;
+    margin-top: 140px;
     opacity: 1;
     visibility: visible;
-} 
+}
 
 .tab-More-button {
     border: 1px solid #EFF6FA;
@@ -161,14 +170,25 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-left: 50px;
+    padding-left: 80px;
+    width: 100%;
+}
+.img-box4{
+    padding-left: 150px;
 }
 
 .diamond-img {
-    width: 66%;
+    width: 360px;
     margin-top: -120px;
 }
-
+.diamond-img2 {
+    width: 360px;
+    margin-top: -26px;
+}
+.diamond-img3{
+    width: 280px;
+    margin-top: -186px;
+}
 .img-box span {
     margin-top: 20px;
 }
@@ -188,15 +208,19 @@ section {
 }
 
 .radio-container {
-    width: 200px;
+    width: 100px;
     align-items: end;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+}
+.radio-container input, label{
+    cursor: pointer;
 }
 
 .radio-container label {
-    flex-direction: row-reverse;
     color: #A9AEB3;
+    display: flex;
+    align-items: center;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -240,10 +264,45 @@ input:checked {
     justify-content: center;
     height: 42px;
 }
-.diamond-img2{
-    width: 67%;
-    margin-top: -26px;
-}
-.box-info2{
+
+
+
+.box-info2 {
     width: 42%;
+}
+
+
+
+
+
+
+input {
+    visibility: hidden;
+    position: absolute;
+}
+
+input[type=radio]+label:before {
+    margin-right: 2px;
+    content: " ";
+    display: inline-block;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+input[type=radio]:checked+label{
+    color: white;
+}
+input[type=radio]:checked+label:before {
+    background: rgb(255, 255, 255);
+}
+
+/* CUSTOM RADIO AND CHECKBOX STYLES */
+input[type=radio]+label:before {
+    border-radius: 50%;
 }

@@ -47,18 +47,16 @@
                             <span class="p-type-1" style="text-align: center;">Total Internal Reflections</span>
                         </div>
                         <div class="radio-container flex-column">
-                            <label class="flex-row custom-radio" id="radio1">
-                                <input type="radio" name="options" value="option1" checked>                 
-                                Deep
-                            </label>
-                            <label class="flex-row custom-radio" id="radio2">
-                                <input type="radio" name="options" value="option2">
-                                Ideal
-                            </label>
-                            <label class="flex-row custom-radio" id="radio3">
-                                <input type="radio" name="options" value="option3">
-                                Shallow
-                            </label>
+                            <form action="" class="radio-container flex-column">
+                                <input type="radio" id="r-1" name="options" value="option1" >                   
+                                <label class="flex-row custom-radio" for="r-1">Deep</label>
+                            
+                                <input type="radio" id="r-2" name="options" value="option2" checked>
+                                <label class="flex-row custom-radio" for="r-2">Ideal</label>
+                            
+                                <input type="radio" id="r-3" name="options" value="option3">                   
+                                <label class="flex-row custom-radio" for="r-3">Shallow</label>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -80,32 +78,108 @@
                         <div class="img-box">
                             <div class="shadow-bg"></div>
                             <img class="diamond-img2" src="imgs/sec2img.png" alt="">
-                            <span class="p-type-1" style="text-align: center;">Small Inclusions</span>
+                            <span class="p-type-1" style="text-align: center;">Faint Yellow</span>
                         </div>
                         <div class="radio-container flex-column">
-                            <label class="flex-row custom-radio" id="radio1">
-                                <input type="radio" name="options" value="option1" checked>                 
-                                Deep
-                            </label>
-                            <label class="flex-row custom-radio" id="radio2">
-                                <input type="radio" name="options" value="option2">
-                                Ideal
-                            </label>
-                            <label class="flex-row custom-radio" id="radio3">
-                                <input type="radio" name="options" value="option3">
-                                Shallow
-                            </label>
+
+                       <form action="" class="radio-container flex-column">
+                            <input type="radio" id="r-4" name="options" value="option1">                   
+                            <label class="flex-row custom-radio" for="r-4">F/IF</label>
+                        
+                            <input type="radio" id="r-5" name="options" value="option2">
+                            <label class="flex-row custom-radio" for="r-5">VVS</label>
+                        
+                            <input type="radio" id="r-6" name="options" value="option3">                   
+                            <label class="flex-row custom-radio" for="r-6">VS</label>
+
+                            <input type="radio" id="r-7" name="options" value="option3" checked>                   
+                            <label class="flex-row custom-radio" for="r-7">S</label>
+
+                            <input type="radio" id="r-8" name="options" value="option3">                   
+                            <label class="flex-row custom-radio" for="r-8">I</label>
+                        </form>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="tab3" class="tab">
-                <h2>Tab 3 Content</h2>
-                <p>This is the content for Tab 3.</p>
+                <div class="content">
+                    <div class="box-info2">
+                        <h2 class="title-h2">What is Diamond Color ?</h2>
+                        <p class="p-type-2">Diamond color denotes the presence or absence of hue, ranging from colorless to light yellow or brown. The scale typically ranges from D (colorless) to Z (light yellow or brown), with colorless diamonds allowing maximum light reflection, thereby increasing their brilliance and value.</p>
+                        <button class="tab-More-button">Learn More <svg width="7" height="13" viewBox="0 0 7 13"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.56543L6 6.56543L1 11.5654" stroke="rgba(255, 255, 255, 0.5)"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tab1-2nd-box">
+                        <div class="img-box">
+                            <div class="shadow-bg"></div>
+                            <img class="diamond-img2" src="imgs/SEC3IMG.png" alt="">
+                            <span class="p-type-1" style="text-align: center;">Small Inclusions</span>
+                        </div>
+                        <div class="radio-container flex-column">
+                            <form action="" class="radio-container flex-column">
+                                <input type="radio" id="r-9" name="options" value="option1">                   
+                                <label class="flex-row custom-radio" for="r-9">D-F</label>
+                            
+                                <input type="radio" id="r-10" name="options" value="option2">
+                                <label class="flex-row custom-radio" for="r-10">G-J</label>
+                            
+                                <input type="radio" id="r-11" name="options" value="option3">                   
+                                <label class="flex-row custom-radio" for="r-11">K-M</label>
+
+                                <input type="radio" id="r-12" name="options" value="option3" checked>                   
+                                <label class="flex-row custom-radio" for="r-12">N-R</label>
+
+                                <input type="radio" id="r-13" name="options" value="option3">                   
+                                <label class="flex-row custom-radio" for="r-13">S-Z</label>
+                                </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
             <div id="tab4" class="tab">
-                <h2>Tab 4 Content</h2>
-                <p>This is the content for Tab 4.</p>
+                <div class="content">
+                    <div class="box-info2">
+                        <h2 class="title-h2">How is carat measured?</h2>
+                        <p class="p-type-2">Carat weight measures a diamond's mass, with one carat equaling 200 milligrams or 0.2 grams. It's a standardized unit used to determine the size and weight of a diamond, influencing its value and rarity.</p>
+                        <button class="tab-More-button">Learn More <svg width="7" height="13" viewBox="0 0 7 13"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.56543L6 6.56543L1 11.5654" stroke="rgba(255, 255, 255, 0.5)"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tab1-2nd-box">
+                        <div class="img-box img-box4">
+                            <div class="shadow-bg"></div>
+                            <img class="diamond-img3" src="imgs/hand-4.png" alt="">
+                        </div>
+                        <div class="radio-container flex-column">
+                            <form action="" class="radio-container flex-column">
+                                <input type="radio" id="r-14" name="options" value="option1">                   
+                                <label class="flex-row custom-radio" for="r-14">D-F</label>
+                            
+                                <input type="radio" id="r-15" name="options" value="option2">
+                                <label class="flex-row custom-radio" for="r-15">G-J</label>
+                            
+                                <input type="radio" id="r-16" name="options" value="option3">                   
+                                <label class="flex-row custom-radio" for="r-16">K-M</label>
+
+                                <input type="radio" id="r-16" name="options" value="option3" checked>                   
+                                <label class="flex-row custom-radio" for="r-16">N-R</label>
+
+                                <input type="radio" id="r-16" name="options" value="option3">                   
+                                <label class="flex-row custom-radio" for="r-16">S-Z</label>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -115,6 +189,7 @@
         </svg>
         </div></button>
     </div>
+  
     <script src="app.js"></script>
 </body>
 
