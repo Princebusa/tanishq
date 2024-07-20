@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+  
 
 <body>
+
+      <!-- second section -->
+
+
     <section class="switcher">
         <div class="switcher-title">
             <p class="sub-title">Understanding The 4Cs</p>
@@ -38,21 +42,22 @@
                     </div>
                     <div class="tab1-2nd-box">
                         <div class="img-box">
-                            <img src="imgs/tab-1-img.png" alt="">
+                            <div class="shadow-bg"></div>
+                            <img class="diamond-img" src="imgs/tab-1-img.png" alt="">
                             <span class="p-type-1" style="text-align: center;">Total Internal Reflections</span>
                         </div>
-                        <div class="radio-container">
-                            <label>
-                                <input type="radio" name="options" value="option1" checked>
-                                Option 1
+                        <div class="radio-container flex-column">
+                            <label class="flex-row custom-radio" id="radio1">
+                                <input type="radio" name="options" value="option1" checked>                 
+                                Deep
                             </label>
-                            <label>
+                            <label class="flex-row custom-radio" id="radio2">
                                 <input type="radio" name="options" value="option2">
-                                Option 2
+                                Ideal
                             </label>
-                            <label>
+                            <label class="flex-row custom-radio" id="radio3">
                                 <input type="radio" name="options" value="option3">
-                                Option 3
+                                Shallow
                             </label>
                         </div>
                     </div>
@@ -60,8 +65,39 @@
 
             </div>
             <div id="tab2" class="tab">
-                <h2>Tab 2 Content</h2>
-                <p>This is the content for Tab 2.</p>
+                <div class="content">
+                    <div class="box-info2">
+                        <h2 class="title-h2">Why Clarity is Important ?</h2>
+                        <p class="p-type-2">Clarity is an important factor in diamond quality and price , it is the absence of internal inclusion and surface blemishes on diamond </p>
+                        <button class="tab-More-button">Learn More <svg width="7" height="13" viewBox="0 0 7 13"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.56543L6 6.56543L1 11.5654" stroke="rgba(255, 255, 255, 0.5)"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tab1-2nd-box">
+                        <div class="img-box">
+                            <div class="shadow-bg"></div>
+                            <img class="diamond-img2" src="imgs/sec2img.png" alt="">
+                            <span class="p-type-1" style="text-align: center;">Small Inclusions</span>
+                        </div>
+                        <div class="radio-container flex-column">
+                            <label class="flex-row custom-radio" id="radio1">
+                                <input type="radio" name="options" value="option1" checked>                 
+                                Deep
+                            </label>
+                            <label class="flex-row custom-radio" id="radio2">
+                                <input type="radio" name="options" value="option2">
+                                Ideal
+                            </label>
+                            <label class="flex-row custom-radio" id="radio3">
+                                <input type="radio" name="options" value="option3">
+                                Shallow
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="tab3" class="tab">
                 <h2>Tab 3 Content</h2>
@@ -73,6 +109,12 @@
             </div>
         </div>
     </section>
+    <div class="lastbtn">
+    <button id="demo">Discover Brilliant Diamonds <div><svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.5 1.56543L6.5 6.56543L1.5 11.5654" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </div></button>
+    </div>
     <script src="app.js"></script>
 </body>
 

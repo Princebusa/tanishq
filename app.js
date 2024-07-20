@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
+
+
     const tabButtons = document.querySelectorAll('.switcher-bar button');
     const tabs = document.querySelectorAll('.tab');
 
@@ -11,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             button.classList.add('focus');
             document.getElementById(tabId).classList.add('active');
+
         });
     });
-});
-// defaultValue: "option1"
+
+ 
