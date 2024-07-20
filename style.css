@@ -9,6 +9,9 @@
     /* font-family: "Inter", sans-serif;
     font-family: "Abhaya Libre", serif; */
 }
+section{
+    padding: 0 20px;
+}
 
 .flex-column {
     display: flex;
@@ -173,7 +176,8 @@ section {
     padding-left: 80px;
     width: 100%;
 }
-.img-box4{
+
+.img-box4 {
     padding-left: 150px;
 }
 
@@ -181,14 +185,17 @@ section {
     width: 360px;
     margin-top: -120px;
 }
+
 .diamond-img2 {
     width: 360px;
     margin-top: -26px;
 }
-.diamond-img3{
+
+.diamond-img3 {
     width: 280px;
     margin-top: -186px;
 }
+
 .img-box span {
     margin-top: 20px;
 }
@@ -213,7 +220,9 @@ section {
     justify-content: center;
     gap: 30px;
 }
-.radio-container input, label{
+
+.radio-container input,
+label {
     cursor: pointer;
 }
 
@@ -295,14 +304,104 @@ input[type=radio]+label:before {
     flex-grow: 0;
 
 }
-input[type=radio]:checked+label{
+
+input[type=radio]:checked+label {
     color: white;
 }
+
 input[type=radio]:checked+label:before {
     background: rgb(255, 255, 255);
 }
 
-/* CUSTOM RADIO AND CHECKBOX STYLES */
 input[type=radio]+label:before {
     border-radius: 50%;
+}
+.tab-content{
+    padding: 0 50px;
+}
+@media(max-width:1154px) {
+    .title-h2 {
+        font-size: 2.4rem;
+        line-height: 38px;
+    }
+
+    .tab-More-button {
+        padding: 18px 30px;
+        font-size: 0.8rem;
+    }
+
+
+
+    .diamond-img {
+        width: 330px;
+        margin-top: -120px;
+    }
+    
+    .diamond-img2 {
+        width: 330px;
+        margin-top: -26px;
+    }
+    
+    .diamond-img3 {
+        width: 230px;
+        margin-top: -136px;
+    }
+    .radio-container{
+        row-gap: 20px;
+    }
+    input[type=radio]+label:before {
+        width: 17px;
+        height: 17px;
+    }
+    .radio-container label{
+font-size: 0.87rem;
+    }
+}
+
+@media(max-width:1048px) {
+    .title-h2 {
+        font-size: 2.2rem;
+        line-height: 38px;
+    }
+    .p-type-2 {
+        font-size: .8rem;
+    }
+    .tab-More-button{
+        font-size: .7rem;
+    }
+
+}
+@media(max-width:945px) {
+    .content{
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+    .box-info{
+        width: 100%;
+    }
+    .tab1-2nd-box{
+        width: 100%;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .flex-column{
+        flex-direction: row;
+    }
+    .radio-container{
+        width: 100%;
+    }
+    .radio-container label{
+        flex-direction: row-reverse;
+        column-gap: 8px;
+    }
+    .img-box{
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width:562px) {
+    .switcher-bar button{
+padding: 14px 35px;
+    }
 }
