@@ -108,20 +108,27 @@ section {
 }
 
 .tab-content .tab {
-    opacity: 0;
-    display: none;
+    height: 1px;
+    margin-top: 0;
     max-width: 1156px;
-    margin-top: 140px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.9s ease-in-out;
+   
 }
-
 .content {
     display: flex;
 
 }
-
+.tab-content{
+    position: relative;
+  
+}
  .tab-content .tab.active {
-    display: block;
+    height:fit-content;
+    margin-top: 140px; 
     opacity: 1;
+    visibility: visible;
 } 
 
 .tab-More-button {

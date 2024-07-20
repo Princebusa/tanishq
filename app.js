@@ -1,5 +1,5 @@
 
-
+document.addEventListener('DOMContentLoaded', () => {
     const tabButtons = document.querySelectorAll('.switcher-bar button');
     const tabs = document.querySelectorAll('.tab');
 
@@ -15,5 +15,7 @@
 
         });
     });
-
+});
  
+
+
